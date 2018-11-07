@@ -52,11 +52,19 @@ custom style for custom page
   height: 1000px;
 
   .position-fixed {
-    width: 100vh;
+    
+
+    .custom-width {
+      width: 100vh;
     display: contents;
+    }
 
     a {
       color: inherit;
+    }
+
+    .card {
+      border: none;background: none;
     }
   }
 
