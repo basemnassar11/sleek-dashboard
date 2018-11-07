@@ -49,27 +49,29 @@
 custom style for custom page 
 */
 .custom-page {
-    height: 1000px;
+  height: 1000px;
 
-    .position-fixed {
-        width: 1140px;
-        a {
-            color: inherit;
-        }
+  .position-fixed {
+    width: 100vh;
+    display: contents;
+
+    a {
+      color: inherit;
     }
+  }
+
+  .page-content {
+    margin-top: 160px;
+  }
+
+  @media screen and (max-width:992px) {
 
     .page-content {
-        margin-top: 160px;
+      margin-top: inherit;
     }
 
-    @media screen  and (max-width:992px){
-
-        .page-content {
-            margin-top: inherit;
-        }
-
-        .position-fixed {
-            position: relative !important;
-        }
+    .position-fixed {
+      position: relative !important;
     }
+  }
 }
