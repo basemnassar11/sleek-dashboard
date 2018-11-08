@@ -46,17 +46,28 @@
 
 
 /* 
+equal height for col 
+*/
+
+
+/* 
 custom style for custom page 
 */
 .custom-page {
   height: 1000px;
 
   .position-fixed {
-    
+
 
     .custom-width {
       width: 100vh;
-    display: contents;
+      display: contents;
+
+      .row {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
     }
 
     a {
@@ -64,12 +75,18 @@ custom style for custom page
     }
 
     .card {
-      border: none;background: none;
+      border: none;
+      background: none;
+      padding-right: 1rem;
+      .card-body {
+        padding: 0;
+      }
     }
   }
 
   .page-content {
     margin-top: 160px;
+    
   }
 
   @media screen and (max-width:992px) {
