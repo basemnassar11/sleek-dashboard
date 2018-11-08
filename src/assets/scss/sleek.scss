@@ -53,6 +53,9 @@ equal height for col
 /* 
 custom style for custom page 
 */
+.header-fixed .page-wrapper {
+  padding-top: 1rem !important;
+}
 .custom-page {
   height: 1000px;
 
@@ -61,12 +64,17 @@ custom style for custom page
 
     .custom-width {
       width: 100vh;
+      font-size: 0.8rem;
       display: contents;
 
       .row {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+
+        .col-xl-4 {
+          margin-bottom: 1rem;
+        }
       }
     }
 
@@ -76,20 +84,22 @@ custom style for custom page
 
     .card {
       border: none;
-      background: none;
-      padding-right: 1rem;
+      
+      
       .card-body {
-        padding: 0;
+        
       }
+
+      
     }
   }
 
   .page-content {
-    margin-top: 160px;
+    margin-top: 27rem;
     
   }
 
-  @media screen and (max-width:992px) {
+  @media screen and (max-width:1200px) {
 
     .page-content {
       margin-top: inherit;
