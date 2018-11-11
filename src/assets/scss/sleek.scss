@@ -95,7 +95,7 @@ custom style for custom page
   }
 
   .page-content {
-    margin-top: 27rem;
+    
     
   }
 
@@ -109,4 +109,10 @@ custom style for custom page
       position: relative !important;
     }
   }
+}
+
+
+.scrollable {
+  height: 100px; /* or any value */
+  overflow-y: auto;
 }
