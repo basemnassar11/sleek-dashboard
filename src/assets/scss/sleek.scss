@@ -54,54 +54,49 @@ equal height for col
 custom style for custom page 
 */
 
-.gray-dark{
- background-color: $gray-dark;  
+.gray-dark {
+  background-color: $gray-dark;
 }
-.header-fixed .page-wrapper {
-  
-}
+
+.header-fixed .page-wrapper {}
+
 .custom-page {
   height: 1000px;
 
-  
 
 
-    .custom-width {
-      width: 100vh;
-      font-size: 0.8rem;
-      display: contents;
 
-      .row {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+  .custom-width {
+    width: 100vh;
+    font-size: 0.8rem;
+    display: contents;
 
-        .col-xl-4 {
-          margin-bottom: 1rem;
-        }
+    .row {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      .col-xl-4 {
+        margin-bottom: 1rem;
       }
     }
-
-    a {
-      color: inherit;
-    }
-
-    .card {
-      border: none;
-      
-      
-      .card-body {
-        
-      }
-
-      
-    }
-  
-
-  .page-content {
-    
-    
   }
+
+  a {
+    color: inherit;
+  }
+
+  .card {
+    border: none;
+
+
+    .card-body {}
+
+
+  }
+
+
+  .page-content {}
 
   @media screen and (max-width:1200px) {
 
@@ -118,10 +113,11 @@ custom style for custom page
 
 .scrollable {
   padding-top: 1rem;
-  height: 500px; /* or any value */
+  height: 500px;
+  /* or any value */
   overflow-y: auto;
-  
-  p{
+
+  p {
     line-height: 1.6;
     margin-bottom: 0.5rem;
   }
@@ -131,20 +127,28 @@ custom style for custom page
 /* 
 custom cards compmnenet
 */
-.custom-cards { 
+.custom-cards {
 
-  .card:hover{
+  .card:hover {
     cursor: pointer;
   }
 
   .custom-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .left {
       padding-right: 1rem;
     }
+
     .right {
       h6 {
         padding-bottom: 0.5rem;
@@ -152,10 +156,15 @@ custom cards compmnenet
     }
 
 
-    @media screen and (max-width: 992px){
-      flex-direction: column;
-      align-items: flex-start;
-      
+    @media screen and (max-width: 992px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+
       .left {
         padding-bottom: 1rem;
       }
