@@ -229,3 +229,28 @@ $(document).ready(function() {
   /*======== 14. PROGRESS BAR ========*/
   NProgress.done();
 });
+
+
+$(document).ready(function() {
+
+  $("#search-text").keyup(function () {
+  
+    var searchTerm = $("#search-text").val();
+    var listItem = $('#list').children('.search-item');
+  
+    $("#list .search-item ").not(":contains('" + searchTerm + "')").each(function(e)   {
+      $(this).addClass('hiding out').removeClass('in');
+      setTimeout(function() {
+          $('.out').addClass('hidden');
+        }, 300);
+    });
+    
+    $("#list .search-item:contains('" + searchTerm + "')").each(function(e) {
+      $(this).removeClass('hidden out').addClass('in');
+      setTimeout(function() {
+          $('.in').removeClass('hiding');
+        }, 1);
+    });
+  });
+
+});

@@ -171,3 +171,41 @@ custom cards compmnenet
     }
   }
 }
+
+
+
+
+
+.front-page {
+
+  margin-top: 3rem;
+  div {-webkit-transition:all .3s ease;  -moz-transition:all .3s ease;  -o-transition:all .3s ease;  transition:all .3s ease;}
+
+  form {
+    display: block;
+    margin-bottom: 2rem;
+
+    input {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  .hidden {
+    margin-left:-100%;
+    opacity:0.5;
+    display:none !important;
+  }
+  
+  .search-item {
+    max-width: 24rem;
+    a {
+      color: inherit;
+    }
+    .card-body {
+      
+    }
+  }
+  
+  #search-btn {cursor:pointer;}
+}
