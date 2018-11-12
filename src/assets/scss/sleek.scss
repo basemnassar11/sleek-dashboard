@@ -53,13 +53,17 @@ equal height for col
 /* 
 custom style for custom page 
 */
+
+.gray-dark{
+ background-color: $gray-dark;  
+}
 .header-fixed .page-wrapper {
   
 }
 .custom-page {
   height: 1000px;
 
-  .position-fixed {
+  
 
 
     .custom-width {
@@ -92,7 +96,7 @@ custom style for custom page
 
       
     }
-  }
+  
 
   .page-content {
     
@@ -113,6 +117,48 @@ custom style for custom page
 
 
 .scrollable {
-  height: 100px; /* or any value */
+  padding-top: 1rem;
+  height: 500px; /* or any value */
   overflow-y: auto;
+  
+  p{
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+/* 
+custom cards compmnenet
+*/
+.custom-cards { 
+
+  .card:hover{
+    cursor: pointer;
+  }
+
+  .custom-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .left {
+      padding-right: 1rem;
+    }
+    .right {
+      h6 {
+        padding-bottom: 0.5rem;
+      }
+    }
+
+
+    @media screen and (max-width: 992px){
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .left {
+        padding-bottom: 1rem;
+      }
+    }
+  }
 }
